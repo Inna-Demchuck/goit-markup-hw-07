@@ -1,0 +1,11 @@
+/*footer-logo*/
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--primary-light);
+}
+
+.footer-logo:focus {
+    outline: 1px solid var(--accent-color);
+}

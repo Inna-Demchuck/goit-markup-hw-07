@@ -1,0 +1,24 @@
+/*header-logo*/
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.header-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--primary-dark);
+    margin-right: 93px;
+}
+
+.header-logo:focus {
+    outline: 1px solid var(--accent-color);
+}
+
+.logo-section {
+    color: var(--accent-color);
+}
