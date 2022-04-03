@@ -7,7 +7,7 @@
     line-height: 1.19;
 }
 
-.header-logo {
+.header__logo {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -15,10 +15,23 @@
     margin-right: 93px;
 }
 
-.header-logo:focus {
+.header__logo:focus {
     outline: 1px solid var(--accent-color);
 }
 
-.logo-section {
+.logo__section {
     color: var(--accent-color);
+}
+
+
+/*footer-logo*/
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--primary-light);
+}
+
+.footer__logo:focus {
+    outline: 1px solid var(--accent-color);
 }
