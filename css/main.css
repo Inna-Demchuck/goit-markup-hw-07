@@ -1,22 +1,7 @@
 /*UTILS */
-:root {
-  /* color */
-  --main-color: #212121;
-  --secondary-color: #757575;
-  --accent-color: #2196f3;
-  --primary-dark: #000000;
-  --primary-light: #ffffff;
-  --adress-color: rgba(255, 255, 255, 0.6);
-  --btn-color: #188ce8;
-  --background-color: #f5f4fa;
-  --border-color: #ececec;
-  /* theme */
-  --dark-theme-color: #2f303a;
-  /* text */
-  --main-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
-}
-
+/* color */
+/* theme */
+/* text */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -199,7 +184,7 @@ body {
   text-align: center;
 }
 
-.hero-title {
+.section-hero__title {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
@@ -213,7 +198,7 @@ body {
   color: var(--primary-light);
 }
 
-.hero-btn {
+.section-hero__btn {
   padding: 10px 32px;
   border-radius: 4px;
   border: transparent;
@@ -227,23 +212,27 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.section-hero__btn:hover,
+.section-hero__btn:focus {
   outline: transparent;
   background-color: var(--btn-color);
   border: 1px solid var(--btn-color);
 }
 
 /*advantage*/
-.list-advantage {
+.advantage-list {
   display: flex;
 }
 
-.item-advantage {
+.advantage-list__item {
   width: 270px;
 }
 
-.icon-advantage-wrapper {
+.advantage-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage-list__icon {
   display: flex;
   margin-bottom: 30px;
   height: 120px;
@@ -254,11 +243,7 @@ body {
   align-items: center;
 }
 
-.item-advantage:not(:last-child) {
-  margin-right: 30px;
-}
-
-.title-advantage {
+.advantage-list__title {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -266,18 +251,18 @@ body {
   text-transform: uppercase;
 }
 
-.description-advantage {
+.advantage-list__description {
   line-height: 1.71;
   color: var(--secondary-color);
 }
 
 /*examples*/
-.section-examples {
+.examples {
   padding-bottom: 94px;
   padding-top: 0;
 }
 
-.title-examples {
+.examples__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -285,20 +270,20 @@ body {
   text-align: center;
 }
 
-.list-examples {
+.examples__list {
   display: flex;
   justify-content: space-between;
 }
 
-.item-examples:not(:last-child) {
+.examples__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.examples-wrapper {
+.examples__wrapper {
   position: relative;
 }
 
-.examples-label {
+.examples__label {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -315,11 +300,11 @@ body {
 }
 
 /*our-team*/
-.section-team {
+.team {
   background-color: var(--background-color);
 }
 
-.title-team {
+.team__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -327,25 +312,27 @@ body {
   text-align: center;
 }
 
-.list-team {
+.team__list {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
-.item-team {
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 4, 4, 0.14), 0px 2px 1px rgba(1, 4, 6, 0.2);
 }
 
-.item-team:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.block-description-team {
+.team__description-block {
   background-color: var(--primary-light);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.list-title-team {
+.team__subtitle {
   display: block;
   margin-bottom: 10px;
   font-weight: 500;
@@ -353,12 +340,7 @@ body {
   line-height: 1.19;
 }
 
-.block-description-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.description-team {
+.team__description {
   display: block;
   font-size: 16px;
   line-height: 1.19;
@@ -367,7 +349,7 @@ body {
 }
 
 /*regular-customer*/
-.title-customers {
+.customers__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -377,16 +359,16 @@ body {
   color: var(--main-color);
 }
 
-.customers-list {
+.customers__list {
   display: flex;
   justify-content: center;
 }
 
-.customers-item:not(:last-child) {
+.customers__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.customers-link {
+.customers__link {
   display: flex;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -394,8 +376,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-link:hover,
-.customers-link:focus {
+.customers__link:hover,
+.customers__link:focus {
   outline: transparent;
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
@@ -815,7 +797,7 @@ body {
   border-radius: 4px;
 }
 
-.form-icon-footer {
+.footer-form__icon {
   margin-top: 13px;
   margin-left: 10px;
   align-self: baseline;

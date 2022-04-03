@@ -1,11 +1,11 @@
 /*examples*/
 
-.section-examples {
+.examples {
     padding-bottom: 94px;
     padding-top: 0;
 }
 
-.title-examples {
+.examples__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -13,20 +13,20 @@
     text-align: center;
 }
 
-.list-examples {
+.examples__list {
     display: flex;
     justify-content: space-between;
 }
 
-.item-examples:not(:last-child) {
+.examples__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.examples-wrapper {
+.examples__wrapper {
     position: relative;
 }
 
-.examples-label {
+.examples__label {
     position: absolute;
     bottom: 0;
     width: 100%;

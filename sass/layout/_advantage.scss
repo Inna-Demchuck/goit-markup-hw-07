@@ -1,14 +1,18 @@
 /*advantage*/
 
-.list-advantage {
+.advantage-list {
     display: flex;
 }
 
-.item-advantage {
+.advantage-list__item {
     width: 270px;
 }
 
-.icon-advantage-wrapper {
+.advantage-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantage-list__icon {
     display: flex;
     margin-bottom: 30px;
     height: 120px;
@@ -19,11 +23,7 @@
     align-items: center;
 }
 
-.item-advantage:not(:last-child) {
-    margin-right: 30px;
-}
-
-.title-advantage {
+.advantage-list__title {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
@@ -31,7 +31,7 @@
     text-transform: uppercase;
 }
 
-.description-advantage {
+.advantage-list__description {
     line-height: 1.71;
     color: var(--secondary-color);
 }
