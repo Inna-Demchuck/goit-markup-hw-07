@@ -1,26 +1,24 @@
 /*header-logo*/
 
 .logo {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    &__section {
+        color: $accent-color;
+    }
 }
 
 .header__logo {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-    color: var(--primary-dark);
+    color: $primary-dark;
     margin-right: 93px;
-}
-
-.header__logo:focus {
-    outline: 1px solid var(--accent-color);
-}
-
-.logo__section {
-    color: var(--accent-color);
+    &:focus {
+        outline: 1px solid $accent-color;
+    }
 }
 
 
@@ -29,9 +27,8 @@
 .footer__logo {
     display: inline-block;
     margin-bottom: 20px;
-    color: var(--primary-light);
-}
-
-.footer__logo:focus {
-    outline: 1px solid var(--accent-color);
+    color: $primary-light;
+    &:focus {
+        outline: 1px solid $accent-color;
+    }
 }

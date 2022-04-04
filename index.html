@@ -367,7 +367,7 @@
             <div>
                 <a class="footer__logo logo link" href="" lang="en"><span class="logo__section">Web</span>Studio</a>
                 <adress>
-                    <ul class="adress-list">
+                    <ul class="adress-list list">
                         <li class="adress-list__item">
                             <a class="adress-list__adress">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
@@ -430,21 +430,24 @@
         </div>
     </footer>
 
+    <!-- modal -->
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close-btn" data-modal-close>
+            <button class="modal__close-btn" type="button" data-modal-close>
                 <svg width="11" height="11">
                     <use href="./images/icons.svg#close" aria-label="close-button"></use>
                 </svg>
 
             </button>
-            <form class="modal-form" action="#">
-                <b class="form-action">Оставьте свои данные, мы вам перезвоним</b>
 
-                <label class="form-description">Имя
-                    <span class="form-input-wrapper">
-                        <input class="form-cell" name="user-name" type="text">
-                        <svg class="form-icon" width="18" height="18">
+            <form class="modal-form" action="#">
+                <b class="modal-form__action">Оставьте свои данные, мы вам перезвоним</b>
+
+                <label class="modal-form__description">Имя
+                    <span class="modal-form__wrapper">
+                        <input class="modal-form__cell" name="user-name" type="text">
+                        <svg class="modal-form__icon" width="18" height="18">
                             <use href="./images/icons.svg#phone-black" aria-label="phone"></use>
                         </svg>
                     </span>
@@ -452,40 +455,40 @@
                 </label>
 
 
-                <label class="form-description">Телефон
-                    <span class="form-input-wrapper">
-                        <input class="form-cell" name="user-phone" type="tel">
-                        <svg class="form-icon" width="18" height="18">
+                <label class="modal-form__description">Телефон
+                    <span class="modal-form__wrapper">
+                        <input class="modal-form__cell" name="user-phone" type="tel">
+                        <svg class="modal-form__icon" width="18" height="18">
                             <use href="./images/icons.svg#person-black" aria-label="phone"></use>
                         </svg>
                     </span>
                 </label>
 
 
-                <label class="form-description">Почта
-                    <span class="form-input-wrapper">
-                        <input class="form-cell" name="user-email" type="email">
-                        <svg class="form-icon" width="18" height="18">
+                <label class="modal-form__description">Почта
+                    <span class="modal-form__wrapper">
+                        <input class="modal-form__cell" name="user-email" type="email">
+                        <svg class="modal-form__icon" width="18" height="18">
                             <use href="./images/icons.svg#email-black" aria-label="phone"></use>
                         </svg>
                     </span>
                 </label>
 
 
-                <label class="form-description">Комментарий
+                <label class="modal-form__description">Комментарий
 
-                    <textarea class="form-message" name="user-message" placeholder="Введите текст"></textarea>
+                    <textarea class="modal-form__message" name="user-message" placeholder="Введите текст"></textarea>
                 </label>
 
 
 
-                <label class="form-agreement" for="policy-check">
-                    <input class="form-checkbox visually-hidden" name="user-checkbox" type="checkbox" id="policy-check">
-                    <span class="form-check"></span>Соглашаюсь с рассылкой и принимаю <a class="form-policy" href=""> Условия договора</a>
+                <label class="modal-form__agreement" for="policy-check">
+                    <input class="modal-form__checkbox visually-hidden" name="user-checkbox" type="checkbox" id="policy-check">
+                    <span class="modal-form__check"></span>Соглашаюсь с рассылкой и принимаю <a class="modal-form__policy" href=""> Условия договора</a>
             </label>
 
 
-                <button class="form-send-btn" type="submit">Отправить</button>
+                <button class="modal-form__send-btn" type="submit">Отправить</button>
 
             </form>
         </div>
